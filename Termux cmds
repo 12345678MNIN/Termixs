@@ -1,0 +1,28 @@
+pkg install termux-api
+#!/data/data/com.termux/files/usr/bin/bash
+
+clear
+echo "=== MENU ==="
+echo "1. Digite seu número"
+echo "2. Sair"
+echo "============"
+read -p "Escolha uma opção: " opcao
+
+if [ "$opcao" == "1" ]; then
+    read -p "Digite o número de telefone (com DDD): " numero
+    termux-sms-send -n "$numero" "Oi"
+    echo "Mensagem enviada para $numero!"
+elif [ "$opcao" == "2" ]; then
+    echo "Saindo..."
+    exit 0
+else
+    echo "Opção inválida!"
+fi
+chmod +x ~/bin/BUOSB
+echo 'export PATH=$PATH:~/bin' >> ~/.bashrc
+source ~/.bashrc
+bode
+mv ~/bin/bode ~/bin/BUOSB
+BUOSB
+cd BUOSB
+cd/redsBU/search/
